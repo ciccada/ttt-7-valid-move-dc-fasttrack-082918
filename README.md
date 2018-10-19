@@ -43,3 +43,15 @@ This lab is test-driven, so run the test suite and use the output to help you so
 * Think back to our lessons on the concept of truthiness. Both `false` and `nil` are considered to be "falsey". So, either a `false` or `nil` return value for an invalid move will suffice.
 
 <p data-visibility='hidden'>View <a href='https://learn.co/lessons/ttt-7-valid-move' title='Validating Tic-tac-toe Input'>Validating Tic-tac-toe Input</a> on Learn.co and start learning to code for free.</p>
+
+
+def position_taken?(board,index)
+  if board[index] == " "
+    return false
+    elsif board[index] == ""
+    return false
+    elsif board[index] == nil 
+    return false 
+  else return true
+end
+end
